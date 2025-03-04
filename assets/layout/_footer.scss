@@ -1,0 +1,56 @@
+@use "../abstracts/variables" as*;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/colors" as *;
+@use "../abstracts/typography" as *;
+
+footer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .row{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        .logo{
+            width:100%;
+            gap:1rem;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                height:auto;
+                max-width:5%;
+            }
+        }
+    }
+}
+
+.navbar{
+    ul{
+        display:flex;
+        gap:1rem;
+        flex-direction: row;
+        li{
+            a{
+                font-size: 0.75rem;
+                color:$secondary-color;
+                text-transform: capitalize;
+            }
+        }
+    }
+}
+
+.navbar nav ul li :first-child a{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:1rem;
+}

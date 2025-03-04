@@ -1,0 +1,71 @@
+@charset "UTF-8";
+/** Import des variables et mixins **/
+/** $font-primary: "avenir-book", sans-serif; **/
+/** Import des bases **/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "avenir-black", sans-serif;
+  src: url(../../fonts/avenir-Black.ttf);
+}
+@font-face {
+  font-family: "avenir-book", sans-serif;
+  src: url(../../fonts/avenir-Book.ttf);
+}
+body {
+  background-color: #2B2D37;
+}
+
+.container-fluid {
+  width: 100%;
+}
+
+.container {
+  width: 85%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/** Import des layouts **/
+header .container-fluid .row {
+  display: flex;
+  justify-content: flex-end;
+}
+header .container-fluid .row .cta {
+  background-color: #000000;
+  border: solid 2px;
+  border-color: #C0C0C0;
+  padding: 1rem;
+}
+
+/** Import des composants **/
+/** Import des pages spécifiques **/
+/** Import des thèmes **/
+/** Import des utilitaires **/
+/** @use 'abstracts/variables' as *;
+@use 'abstracts/mixins' as *;
+@use 'abstracts/typography' as *;
+@use 'base/reset' as *;
+@use 'base/global' as *; **/
+/** header{
+    .container-fluid{
+        .row{
+            display:flex;
+            justify-content: right;
+            .cta{
+                background-color:#000000 ;
+                border:solid 2px;
+                border-color: #C0C0C0;
+                padding:1rem;
+            }
+        }
+    }
+} **/
+
+/*# sourceMappingURL=styles.css.map */

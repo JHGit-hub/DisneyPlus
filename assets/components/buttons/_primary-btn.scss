@@ -1,0 +1,13 @@
+@use "../../abstracts/variables" as *;
+@use "../../abstracts/typography" as *;
+@use "../../abstracts/colors" as *;
+
+.primary-btn{
+    background-color: $btn-color;
+    border-radius: 4px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:70px;
+    width:100%;
+}

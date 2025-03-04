@@ -1,0 +1,66 @@
+@use "../abstracts/variables" as*;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/colors" as *;
+@use "../abstracts/typography" as *;
+
+.section-catalogue{
+    display:flex;
+    justify-content: center;
+    .row{
+    display: flex;
+    justify-content: center;
+    .navbar{
+        margin-top:5rem;
+        margin-bottom: 2rem;
+        nav{
+            ul{
+                display:flex;
+                gap:2rem;
+                justify-content: center;
+            }
+        }
+    }
+    }
+}
+
+
+.row{
+    .card-item{
+        max-width:100%;
+        display:flex;
+        justify-content: space-between;
+        gap:1.5rem;
+        .card{
+            a{
+                img{
+                    width:100%;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+/****** media queries ******/
+
+
+@media(max-width:1080px){
+    .m-none{
+        display: none;
+    }
+    .card{
+        flex: 1 1 calc(33% - 1rem);
+    }
+    .section-catalogue .container .row:nth-child(2) .card:nth-child(3) {
+        flex:1 1 calc(100% - 1rem);
+    }
+}
+
+@media(min-width:1080px){
+    .d-none{
+        display:none;
+    }
+}

@@ -1,0 +1,458 @@
+@charset "UTF-8";
+/** Import des variables et mixins **/
+body {
+  font-family: "avenir-black", sans-serif;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+h1 {
+  font-family: "avenir-black", sans-serif;
+  color: #F9F9F9;
+  text-transform: uppercase;
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: "avenir-book", sans-serif;
+  font-size: 1.25rem;
+  color: #F9F9F9;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: "avenir-black", sans-serif;
+  font-size: 2.75rem;
+  color: #F9F9F9;
+  text-transform: capitalize;
+}
+
+h4 {
+  font-family: "avenir-book", sans-serif;
+  font-size: 1rem;
+  color: #C0C0C0;
+}
+
+h5 {
+  font-family: "avenir-book", sans-serif;
+  font-size: 2.2rem;
+  color: #F9F9F9;
+  text-transform: capitalize;
+}
+
+p {
+  font-family: "avenir-book", sans-serif;
+  font-size: 1rem;
+  color: #C0C0C0;
+}
+
+a {
+  font-family: "avenir-book", sans-serif;
+  font-size: 1.125rem;
+  color: #F9F9F9;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/** Import des bases **/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "avenir-black";
+  src: url(../../fonts/avenir-Black.ttf);
+}
+@font-face {
+  font-family: "avenir-book";
+  src: url(../../fonts/avenir-Book.ttf);
+}
+/** $font-primary:'avenir-black';
+$font-secondary:'avenir-book'; **/
+body {
+  background-color: #040714;
+  background-image: url(../../assets/images/Background.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+}
+
+.container-fluid {
+  width: 100%;
+  padding: 0 3rem;
+}
+
+.container {
+  width: 85%;
+}
+
+.row {
+  margin: 1rem 0;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+span {
+  display: block;
+}
+
+/** Import des layouts **/
+/** Import des variables et mixins **/
+header .container-fluid .row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 1rem;
+}
+
+/** Import des variables et mixins **/
+.section-hero-banner {
+  display: flex;
+  justify-content: center;
+}
+
+.article-banner {
+  display: flex;
+  justify-content: center;
+}
+.article-banner .banner {
+  margin-top: 3.5rem;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.article-banner .banner .row {
+  width: 100%;
+}
+
+.row-logo {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.row-logo .column {
+  width: 47%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.row-logo .column .logo {
+  width: 100%;
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row-logo .column .logo img {
+  height: auto;
+  max-width: 30%;
+}
+
+.description {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.description .title {
+  text-align: center;
+}
+.description .subtitle {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+.description .subtitle p {
+  text-align: center;
+}
+.description .logo-list {
+  display: flex;
+  justify-content: space-between;
+}
+.description .logo-list img {
+  max-width: 11%;
+  height: auto;
+}
+
+/****** css mobil ******/
+.banner-mobil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.banner-mobil .logo {
+  width: 100%;
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner-mobil .logo img {
+  height: auto;
+  max-width: 30%;
+}
+
+/****** media queries ******/
+@media (max-width: 1080px) {
+  .m-none {
+    display: none;
+  }
+}
+@media (min-width: 1080px) {
+  .d-none {
+    display: none;
+  }
+}
+/** Import des variables et mixins **/
+.section-catalogue {
+  display: flex;
+  justify-content: center;
+}
+.section-catalogue .row {
+  display: flex;
+  justify-content: center;
+}
+.section-catalogue .row .navbar {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+}
+.section-catalogue .row .navbar nav ul {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.row .card-item {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+.row .card-item .card a img {
+  width: 100%;
+}
+
+/****** media queries ******/
+@media (max-width: 1080px) {
+  .m-none {
+    display: none;
+  }
+  .card {
+    flex: 1 1 calc(33% - 1rem);
+  }
+  .section-catalogue .container .row:nth-child(2) .card:nth-child(3) {
+    flex: 1 1 calc(100% - 1rem);
+  }
+}
+@media (min-width: 1080px) {
+  .d-none {
+    display: none;
+  }
+}
+/** Import des variables et mixins **/
+.section-abonnement .container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.row-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.row-title .column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.abonnement {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.title-option {
+  display: block;
+  font-size: 1rem;
+}
+
+.asterix {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+}
+.asterix p {
+  text-align: center;
+}
+.asterix p .sub-article {
+  display: block;
+}
+
+/** Import des variables et mixins **/
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer .row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .row .logo {
+  width: 100%;
+  gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .row .logo img {
+  height: auto;
+  max-width: 5%;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 1rem;
+  flex-direction: row;
+}
+.navbar ul li a {
+  font-size: 0.75rem;
+  color: #C0C0C0;
+  text-transform: capitalize;
+}
+
+.navbar nav ul li :first-child a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+/** Import des composants **/
+/** Import des variables et mixins **/
+.primary-btn {
+  background-color: #0063e5;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 100%;
+}
+
+/** Import des variables et mixins **/
+.section-abonnement {
+  display: flex;
+  justify-content: center;
+}
+
+.secondary-btn {
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px;
+  padding: 5px 20px;
+  gap: 1rem;
+  border-radius: 50px;
+  background-color: #2B2D37;
+}
+.secondary-btn a {
+  text-transform: capitalize;
+}
+.secondary-btn .switch {
+  background-color: #0063e5;
+  border-color: #0063e5;
+  border: solid 2px;
+  border-radius: 20px;
+  padding: 4px 16px;
+}
+
+/** Import des variables et mixins **/
+.cta {
+  background-color: #000000;
+  border: solid 2px;
+  border-color: #C0C0C0;
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+/** Import des variables et mixins **/
+.card-abonnement {
+  height: 523px;
+  max-width: 29rem;
+  display: flex;
+  flex: 1 0 calc(33% - 2rem);
+  border: solid 2px;
+  border-color: #C0C0C0;
+  padding: 2.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.card-abonnement .top-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  gap: 1rem;
+}
+.card-abonnement .top-card .logo-list {
+  display: flex;
+  justify-content: left;
+  gap: 1rem;
+}
+.card-abonnement .top-card .logo-list img {
+  max-width: 20%;
+  height: auto;
+}
+.card-abonnement .top-card .details li p::before {
+  content: url(../../assets/icons/validate.png);
+  display: inline-block;
+  margin-right: 10px;
+}
+.card-abonnement .price {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+.card-abonnement .price p {
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: #f9f9f9;
+}
+.card-abonnement .price p .price-duration {
+  display: inline-block;
+  font-size: 1rem;
+  margin-left: 5px;
+  color: #C0C0C0;
+}
+
+/** Import des pages spécifiques **/
+/** Import des thèmes **/
+/** Import des utilitaires **/
+
+/*# sourceMappingURL=styles.css.map */

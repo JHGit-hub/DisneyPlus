@@ -1,0 +1,59 @@
+@use"variables" as *;
+@use"colors" as *;
+@use"mixins" as *;
+
+
+body {
+    font-family: $font-primary, sans-serif;
+    font-size: $font-size-base;
+    line-height: 1.6;
+}
+
+
+h1{
+    font-family: $font-primary, sans-serif;
+    color: $primary-color;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+h2{
+    font-family: $font-secondary, sans-serif;
+    font-size: 1.25rem;
+    color: $primary-color;
+    text-transform: uppercase;
+}
+
+h3{
+    font-family: $font-primary, sans-serif;
+    font-size: 2.75rem;
+    color: $primary-color;
+    text-transform: capitalize;
+}
+
+h4{
+    font-family: $font-secondary, sans-serif;
+    font-size: 1rem;
+    color: $secondary-color;
+}
+
+h5{
+    font-family: $font-secondary, sans-serif;
+    font-size: 2.2rem;
+    color: $primary-color;
+    text-transform: capitalize;
+}
+
+p{
+    font-family: $font-secondary, sans-serif;
+    font-size: 1rem;
+    color: $secondary-color;
+}
+
+a{
+    font-family: $font-secondary, sans-serif;
+    font-size: 1.125rem;
+    color: $primary-color;
+    text-transform: uppercase;
+    text-decoration: none;
+}

@@ -1,0 +1,31 @@
+@use "../../abstracts/variables" as*;
+@use "../../abstracts/mixins" as *;
+@use "../../abstracts/colors" as *;
+@use "../../abstracts/typography" as *;
+
+.section-abonnement{
+    display:flex;
+    justify-content: center;
+}
+.secondary-btn{
+    width: fit-content;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border:solid 2px;
+    padding: 5px 20px;
+    gap:1rem;
+    border-radius: 50px;
+    background-color: $bg-secondary;
+    a{
+       text-transform: capitalize; 
+    }
+    .switch{
+        background-color: $btn-color;
+        border-color:$btn-color;
+        border:solid 2px;
+        border-radius: 20px;
+        padding: 4px 16px;
+    }
+}
+

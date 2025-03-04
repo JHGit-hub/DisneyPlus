@@ -1,0 +1,12 @@
+@use "../../abstracts/variables" as*;
+@use "../../abstracts/mixins" as *;
+@use "../../abstracts/colors" as *;
+@use "../../abstracts/typography" as *;
+
+.cta{
+    background-color:$background ;
+    border:solid 2px;
+    border-color: $secondary-color;
+    border-radius: 4px;
+    padding:1rem;
+}

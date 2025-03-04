@@ -1,0 +1,48 @@
+@use "../abstracts/variables" as*;
+@use "../abstracts/mixins" as *;
+@use "../abstracts/colors" as *;
+@use "../abstracts/typography" as *;
+
+.section-abonnement{
+    .container{
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+    }
+}
+
+.row-title{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    .column{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap:1rem;
+    }
+}
+
+.abonnement{
+    display:flex;
+    justify-content: space-between;
+    gap:2rem;
+}
+
+.title-option{
+    display: block;
+    font-size: 1rem;
+}
+
+.asterix{
+    margin-top:2rem;
+    display:flex;
+    justify-content: center;
+    p{
+        text-align: center;
+        .sub-article{
+            display: block;
+        }
+    }
+}
